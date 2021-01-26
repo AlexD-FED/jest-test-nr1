@@ -1,9 +1,7 @@
-function add(num1, num2){
-    // console.log('INPUT', num1, num2);
-    const sum = num1 + num2;
-    // console.log("Sum", sum);
-    return sum;
-}
+// 2. importeren
+// const add = require("./index").add;
+// const findByName = require("./index").findByName
+const { add, findByName } = require("./index");
 
 test("add() function should return the sum of 2 numbers", () =>{
     // console.log("Hallo, dit is een test");
@@ -21,24 +19,6 @@ test("add() function should return the sum of 2 numbers", () =>{
 });
 
 
-function  findByName(users, name) {
-    // console.log("INPUT:", users, name);
-    // 1. loop maken
-    // 2. if statement: is de name hetzlefde als de naam uit het object?
-    // 3. zo ja return dat object
-
-    for (let index = 0; index < users.length; index++) {
-        const user = users[index];
-        // console.log("USER 1 voor 1?", user);
-        if (user.name === name){
-          // console.log("GEVONDEN?", user);
-          return user;
-        };
-    };
-
-    return null;
-};
-
 test("findByName() returns an object from an array with a specified name", () =>{
     // ARRANGE
     const users = [
@@ -54,7 +34,6 @@ test("findByName() returns an object from an array with a specified name", () =>
     // ASSERT
     expect(user).toEqual({ id: 2, name: "Nova"});
 });
-
 
 
 test("findByName should return null, if the element is not found", () => {
