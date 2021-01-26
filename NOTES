@@ -1,0 +1,12 @@
+# Test opzetten met jest in de terminal
+
+1. npm init
+2. npm install -D jest
+3. git init -> node_modules in .gitignore zetten
+4. Maak een bestandje met bla.test.js als extensie
+5. Dan schrijf je en test functie (voorbeeld)
+6. npx jest om de testen te runnen
+7. Voeg scripts toe aan je package.json
+
+* Stoppen met testen is ctrl C
+
