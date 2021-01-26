@@ -8,7 +8,7 @@ function add(num1, num2){
 function  findByName(users, name) {
     // console.log("INPUT:", users, name);
     // 1. loop maken
-    // 2. if statement: is de name hetzlefde als de naam uit het object?
+    // 2. if statement: is de name hetzelfde als de naam uit het object?
     // 3. zo ja return dat object
 
     for (let index = 0; index < users.length; index++) {
@@ -22,6 +22,8 @@ function  findByName(users, name) {
 
     return null;
 };
+
+
 
 // 1. exporteren
 
