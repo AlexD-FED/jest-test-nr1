@@ -25,7 +25,7 @@ function  findByName(users, name) {
 
 
 
-// 1. exporteren
+// 1. Exporteren
 
 module.exports = {
     add: add,

@@ -1,4 +1,4 @@
-// 2. importeren
+// 2. Importeren
 // const add = require("./index").add;
 // const findByName = require("./index").findByName
 const { add, findByName } = require("./index");
